@@ -1,0 +1,36 @@
+body {  background: url(../images/toa-heftiba-581911-unsplash.jpg) no-repeat bottom center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+}
+.container {
+  margin: 0 auto;
+}
+ul{
+  list-style-type: none;
+  margin:0 auto;
+}
+li {
+  padding: 5px 5px 5px 0;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.9);
+  width: 25%;
+  height:auto;
+  color:white;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
