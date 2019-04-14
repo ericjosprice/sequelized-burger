@@ -34,27 +34,27 @@ module.exports = function (app) {
     });
 
 
-    // app.put("/api/burgers/:id", function (req, res) {
-    //     var condition = req.params.id;
+    app.put("/api/burgers/:id", function (req, res) {
+        var condition = req.params.id;
 
-    //     console.log("post route hit")
+        console.log("put route hit")
 
-    //     db.Burger.update({
-    //         devoured: req.body.devoured,
-    //         where: {
-    //             id: condition
-    //         }
-
-    //     }).then(function (results) {
-    //         if (result.changedRows == 0) {
-    //             // If no rows were changed, then the ID must not exist, so 404
-    //             return res.status(404).end();
-    //         } else {
-    //             res.status(200).end();
-    //         }
-    //     });
-
-    // });
+        db.Burger.update({
+            devoured: true
+        }, {
+            where: {
+                id: condition
+            }
+        }).then(function (results) {
+            if (result.changedRows == 0) {
+                // If no rows were changed, then the ID must not exist, so 404
+                return res.status(404).end();
+            } else {
+                res.status(200).end();
+            }
+            res.json(results);
+        });
+    });
 
 
 
