@@ -11,11 +11,11 @@ CREATE TABLE burgers (
 
 -- jaws DB info 
 
-DROP DATABASE w7nnmhsxtrwwn73r;
+DROP DATABASE c7ezlmoayt9o3bf4;
 
-CREATE DATABASE w7nnmhsxtrwwn73r;
+CREATE DATABASE c7ezlmoayt9o3bf4;
 
-USE w7nnmhsxtrwwn73r;
+USE c7ezlmoayt9o3bf4;
 
 CREATE TABLE burgers (
     id INT AUTO_INCREMENT NOT NULL,
